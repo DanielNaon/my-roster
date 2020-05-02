@@ -1,0 +1,75 @@
+body{
+    justify-content: center;
+    text-align: center;
+    display: center;
+}
+h1{
+    font-family: 'Faster One', cursive;
+    font-size: 70px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-right: 75px;
+    color: grey;
+    margin-left: 50px;
+}
+.players-Container{
+    display: grid;
+    grid-template-columns: repeat(3, 0.5fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    margin-top: 20px;
+}
+.player{
+    display: flex;
+    justify-content: center;
+    background-color: orange;
+    display: grid;
+    align-content: center;
+    border-radius: 30px;
+    font-family: 'Handlee', cursive;
+}
+h4{
+
+    color: grey;
+    font-family: 'Handlee', cursive;
+}
+img{
+    display: block;
+    border-radius: 10px;
+}
+input{
+    width: 100%;
+    text-align: center;
+    height: 30px;
+    font-family: 'Handlee', cursive;
+    font-size: 25px;
+    color: grey;
+}
+button {
+    background-color: #e7e7e7; 
+    color: black;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 19px;
+    margin-top: 9px;
+    transition-duration: 0.4s;
+    font-family: 'Handlee', cursive;
+  }
+  
+  button:hover {
+    background-color: orange; 
+    color: white;
+  }
+  .dPlayer{
+    font-family: 'Handlee', cursive;
+  }
+  .dream{
+    font-family: 'Handlee', cursive;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 3px;
+  }

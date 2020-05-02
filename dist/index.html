@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Faster+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Handlee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>my Roster</title>
+</head>
+<body>
+    <h1>NBA Players!</h1>
+    <h4>This Api provides the players of the following groups: lakers, warriors, heat, suns</h4>
+    <input type="text" placeholder="Enter Your Favorite Group:"/>
+    <button onclick="fetchData()">Search!</button>
+    <button id="dreamTeam" onclick="getDreamTeam()">DREAM TEAM!</button>
+
+        <!-- Render Nba Players: -->
+    <script id="players-template" type="text/x-handlebars-template">
+      {{#each nba}}
+        <div class="player">
+            <div class="name">{{firstName}}-{{lastName}}</div>
+            <div>{{pos}}</div>
+            <div>{{jersey}}</div>
+            <img style="background-color: grey" src="https://nba-players.herokuapp.com/players/{{pic}}">
+            <button class="fave">Add To Dream Team!</button>
+        </div>
+        {{/each}}
+    </script>
+    <div class="dream">List of Players from your Dream Team:</div>
+    <div class="dream-container"></div>
+    <div class="players-Container"></div>
+
+
+    <script src="./handlebars/dist/handlebars.js"></script>
+    <script src="./jquery/dist/jquery.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
